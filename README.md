@@ -25,7 +25,14 @@ Model Training Summary
 
 Dataset: Sampled 12,000 emails from Enron corpus
 
-Spam filtered heuristically, capped at 5%
+Heuristic Labeling
+Spam Detection:
+Applied keyword-based heuristics to label emails as spam (e.g., 'offer', 'win', 'urgent') and filtered to ~5% to avoid skewing training.
+
+Category & Priority Labels:
+Where explicit labels were not available, category and priority were inferred using logical keyword matching and subject/body context.
+
+ Note: As this is a weakly supervised setup, final evaluation metrics may reflect some noise in the labels. Manual labeling or active learning could improve this in future iterations.
 
 Balanced by class using upsampling/downsampling
 
