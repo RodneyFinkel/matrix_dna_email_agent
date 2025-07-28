@@ -16,7 +16,7 @@ Manual text input
 
 Chat interaction using Groq or OpenAI for email summaries and alt classifiers
 
-Dual-headed classification (category & priority)
+
 
 OOP architecture will be added at a later time
 
